@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+ <classPathEntry  location="/Users/mysgq1/.m2/repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar" />
+  <context id="context1" >
+      <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+            connectionURL="jdbc:mysql://118.144.77.154:3306/ictclas" userId="hm" password="abc123"/>
+	<javaTypeResolver>
+  <property name="forceBigDecimals" value="true" />
+</javaTypeResolver>
+    <javaModelGenerator targetPackage="com.soften.ltp.model" targetProject="/Users/mysgq1/ideaspace/ltp-rest/src/main/java" >
+        <property name="enableSubPackages" value="true" />
+        <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.soften.ltp.mapperxml" targetProject="/Users/mysgq1/ideaspace/ltp-rest/src/main/resources" >
+        <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.soften.ltp.mapper" targetProject="/Users/mysgq1/ideaspace/ltp-rest/src/main/java" type="XMLMAPPER" >
+        <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+
+    <table schema="ictclas" tableName="emotion_word" />
+      <!--<table schema="ictclas" tableName="sentence_emotion" />-->
+
+
+      <!--'doc'-->
+      <!--'filter_key'-->
+      <!--'key_reset'-->
+      <!--'newword_idf'-->
+      <!--'newword_tf'-->
+      <!--'sentence'-->
+      <!--'sentence_break_key'-->
+      <!--'sentence_key'-->
+      <!--'test'-->
+      <!--'userwords'-->
+      <!--'word_idf'-->
+      <!--'word_tf'-->
+
+
+  </context>
+</generatorConfiguration>
